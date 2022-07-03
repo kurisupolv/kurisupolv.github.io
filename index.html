@@ -1,0 +1,352 @@
+<html>
+<style>
+@font-face {
+   font-family: 'Japanese 3017';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Japanese 3017'), url('https://fonts.cdnfonts.com/s/16993/Japanese 3017.woff') format('woff');
+}
+
+*
+{
+padding:0;
+margin:0;
+text-decoration:none;
+list-style: none;
+box-sizing: border-box;
+
+}
+body
+{
+width:100%;
+margin:auto;
+padding:0;
+ background-attachment: fixed;
+overflow: hidden;
+}
+#background-video
+{
+width:100vw;
+height: 100vh;
+object-fit:cover;
+position: fixed;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+z-index: -1;
+}
+.menu
+{
+width:100%;
+height: 90px;
+margin: auto;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-image:url("banner.png");
+background-size: cover;
+}
+.menu h1
+{
+margin-right: 30px;
+margin-left: 30px;
+color: #800080;
+  font-family: 'Japanese 3017', sans-serif;
+  font-size: 33px;
+  text-decoration:none;
+  letter-spacing: 3px;
+}
+.menu2 li
+{
+list-style: none;
+display: inline-block;
+}
+.menu2 li a
+{
+margin-right: 30px;
+padding: 5px;
+text-decoration: none;
+  color: #800080;
+  border-radius: 20px;
+ font-family: Arial;
+  font-weight: 900;
+  font-size: 25px;
+  }
+  
+ .menu2 li a:hover,
+.menu2 li a.active
+{
+  background: #533068;
+  color: #ffdf42;
+  transition: 0.5s;
+  }
+  
+  .content
+  {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  }
+  
+  .content h1
+  {
+  margin-top: 50px;
+  color: #ffdf42;
+  font-family: Arial;
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: 3px;
+    text-shadow: #000000 1px 0 10px;
+}
+
+.content img
+{
+width: 50%;
+}
+.dovequando
+  {
+  width:100%;
+  padding: 10px;
+  margin-top: 80px;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  }
+.dovequando h4
+{
+color: #ffffff;
+  font-family: Acrom;
+  font-size: 15px;
+  }
+  marquee
+  {
+  position: absolute;
+  padding: 0;
+   right: 0;
+   bottom: 0;
+   top: 74%;
+  }
+  marquee > img
+  {
+  width: 20%;
+  }
+  button {
+  margin-left: 10px;
+  display: inline-block;
+  padding: 4px 20px;
+  font-size: 13px;
+  font-family: Arial;
+  font-weight: 900;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #533068;
+  background-color: #ffdf42;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #DAA520;
+}
+
+button:hover {background-color: #FFD700}
+
+button:active {
+color: #ffdf42;
+  background-color: #533068;
+  box-shadow: 0 4px #301934;
+  transform: translateY(2px);
+}
+ .sub-menu
+  {
+    position: absolute;
+  top: 80px;
+  background-color: #533068;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  line-height: 1.9;
+  visibility: hidden;
+  opacity: 0;
+    }
+	.sub-menu li a
+	{
+	font-size: 16px;
+	color: #ffdf42;
+	}
+	.menu2 .fiere:hover .sub-menu
+	{
+	transition: .5s;
+	visibility: visible;
+	opacity: 1;
+	top: 70px;
+		}
+	.sub-menu li a:hover,
+.sub-menu li a.active
+{
+  background: #ffdf42;
+  color: #533068;
+  transition: 0.5s;
+  }
+    .linee
+  {
+  width: 25px;
+  cursor: pointer;
+  display: none;
+  }
+ 
+ @media only screen and (max-width:1200px){
+body{
+width: auto;
+margin: 0;
+padding: 0;
+}
+.menu
+{
+	width: auto;
+	height: auto;
+}
+.menu h1{
+
+font-size: 20px;
+ margin: auto;
+}
+.menu2{
+width: 250px;
+border-radius: 10px;
+background: #533068;
+position: absolute;
+top: 42px;
+left: 10px;
+z-index: 2;
+display: none;
+box-shadow: 0 0 3px #ffdf42, 0 0 5px #000000;
+}
+.menu2 li{
+display: block;
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+.menu2 li a{
+display: block;
+font-size: 13px;
+  color: #ffdf42;
+  margin-left: 23px;
+  	
+}
+.linee
+{
+width: 17px;
+display: block;
+position: absolute;
+margin-left: 15px;
+}
+.sub-menu{
+left: 90px;
+padding: 0px;
+margin: 0px;
+position: absolute;
+margin-top: 50px;
+box-shadow: 0 0 3px #ffdf42, 0 0 5px #000000;
+}	
+.content h1{
+font-size: 25px;
+padding-bottom: 8px;
+}
+.content img{
+width: 250px;
+}
+.dovequando{
+padding: 0;
+  margin-top: 60px;
+}
+.dovequando h4{
+font-size: 15px;
+margin-bottom: 10px;
+}
+marquee
+{
+top: 85%;
+margin-bottom: 0%;
+padding-bottom:0%;
+bottom: 0%;
+}
+marquee > img
+{
+width: 40%;
+}
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+<body>
+<div>
+<video id="background-video" width="100%" autoplay loop muted>
+<source src="sfondo2.mp4" type="video/mp4">
+</video>
+</div>
+<div class="menu">
+<h1>Findyourcon</h1>
+<ul id="menuList" class="menu2">
+    <li><a href="index.html" class="active">HOME</a></li>
+    <li><a href="info.html">INFO</a></li>
+    <li><a href="calendario.html">CALENDARIO</a></li>
+      <li class="fiere"><a href="#">LE FIERE</a>
+	<ul class="sub-menu">
+	<li><a href="alfabetico.html">Alfabetico</a></li>
+	<li><a href="regioni.html">Per Regione</a></li>
+	</ul>
+	</li>
+	</ul>
+	<img src="linee.png" class="linee" onclick="togglemenu()">
+</div>
+    <head>
+
+        <meta charset="utf-8" />
+		  <title>FINDYOURCON</title>
+    </head>
+<div class="content">
+<h1>CERCA LA TUA FIERA</h1>
+<img src="Lovepik_com-401704054-white-line.png">
+</div>
+          <div class="dovequando">
+<h4 id="quando"> Quando? &nbsp &nbsp </h4>
+<input type="month" id="data"
+value="yyyy-mm" 
+min="2022-01" max="2022-12" >
+<button onclick="submitMonth()" id="submit">CERCA</button>
+</div>
+
+<marquee behavior="scroll" direction="left" scrollamount="11" loop="infinite">        
+          <img src="giphy.gif" class="nezuko"> 
+    </marquee>  
+	<script>
+    submitMonth = function(){
+         var selectedMonth = document.getElementById("data").value
+        sessionStorage.setItem("selectedMonth", selectedMonth.substring(5, 7));
+		window.location.href = "calendario.html";
+        }
+    </script>
+	<script>
+function togglemenu(){
+var menuList = document.getElementById("menuList");
+ if(menuList.style.display == "block")
+	{
+		menuList.style.display = "none";
+	}
+ else
+	{
+		menuList.style.display = "block";
+	}
+}
+</script>
+</body>
+</html>

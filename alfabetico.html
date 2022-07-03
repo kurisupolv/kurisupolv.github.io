@@ -1,0 +1,668 @@
+<html>
+<style>
+@font-face {
+   font-family: 'Japanese 3017';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Japanese 3017'), url('https://fonts.cdnfonts.com/s/16993/Japanese 3017.woff') format('woff');
+}
+
+*
+{
+padding:0;
+margin:0;
+text-decoration:none;
+list-style: none;
+box-sizing: border-box;
+}
+body
+{
+width:100%; 
+margin:auto;
+padding:0; 
+background-color: #533068;
+} 
+.menu
+{
+width:100%;
+height: 90px;
+margin: auto;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-image:url("banner.png");
+background-size: cover;
+}
+.menu h1
+{
+margin-right: 30px;
+margin-left: 30px;
+color: #800080;
+font-family: 'Japanese 3017', sans-serif;
+  font-size: 33px;
+  text-decoration:none;
+  letter-spacing: 3px;
+}
+.menu2 li
+{
+list-style: none;
+display: inline-block;
+}
+.menu2 li a
+{
+margin-right: 30px;
+padding: 5px;
+text-decoration: none;
+  color: #800080;
+  border-radius: 20px;
+  font-family: Arial;
+  font-weight: 900;
+  font-size: 25px;
+  }
+  
+ .menu2 li a:hover,
+.menu2 li a.active
+{
+  background: #533068;
+  color: #ffdf42;
+  transition: 0.5s;
+  }
+  section
+  {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  }
+  img
+  {
+  width: 100%;
+  }
+  details > summary {
+  width: 200px;
+  border: none;
+  cursor: pointer;
+}
+details > p {
+  background-color: #3C005A;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  font-size: 12px;
+}
+  .fiere1
+  {
+   line-height: 1.5;
+  font-family: Acrom;
+  font-size: 13px;
+  color: #ffffff;
+  }
+  .fiere2
+  {
+  line-height: 1.5;
+  font-family: Acrom;
+  font-size: 13px;
+  color: #ffffff;
+  }
+  .fiere3
+  {
+  line-height: 1.5;
+  font-family: Acrom;
+  font-size: 13px;
+  color: #ffffff;
+  }
+.container {
+  text-align: center;
+  margin: 30px;
+    border-top: 2px solid white;
+	
+}
+.testo, .email
+{
+width: 15%;
+margin: 4px;
+padding: 2px;
+padding-left: 7px;
+font-size:16px;
+font-family:Acrom;
+}
+.form-control
+{
+padding: 14px 20px;
+width: 31%;
+font-family:Acrom;
+font-size:18px;
+}
+.form-group
+{
+margin: 10px;
+}
+button
+{
+margin: 10px;
+width: 10%;
+font-family:Arial;
+}
+h2
+{
+margin-top: 30px;
+margin-bottom: 20px;
+font-family: Arial;
+font-weight: 500;
+font-size: 20px;
+color: white;
+  }
+  .sub-menu
+  {
+    position: absolute;
+  top: 80px;
+  background-color: #533068;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  line-height: 1.9;
+  visibility: hidden;
+  opacity: 0;
+    }
+	.sub-menu li a
+	{
+	font-size: 16px;
+	color: #ffdf42;
+	}
+	.menu2 .fiere:hover .sub-menu
+	{
+	transition: .5s;
+	visibility: visible;
+	opacity: 1;
+	top: 70px;
+		}
+	.sub-menu li a:hover,
+.sub-menu li a.active
+{
+  background: #ffdf42;
+  color: #533068;
+  transition: 0.5s;
+  }
+  
+   .linee
+  {
+  width: 25px;
+  cursor: pointer;
+  display: none;
+  }
+   @media only screen and (max-width:1200px){
+body{
+width: auto;
+margin: 0;
+padding: 0;
+
+}
+.menu
+{
+	width: auto;
+	height: auto;
+}
+.menu h1{
+font-size: 20px;
+ margin: auto;
+}
+.menu2{
+width: 240px;
+background: #533068;
+position: absolute;
+border-radius: 10px;
+top: 42px;
+left: 10px;
+z-index: 2;
+display: none;
+box-shadow: 0 0 3px #ffdf42, 0 0 5px #000000;
+}
+.menu2 li{
+display: block;
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+.menu2 li a{
+display: block;
+font-size: 13px;
+  color: #ffdf42;
+  margin-left: 23px;
+  	transition: 0.5s;
+}
+.linee
+{
+width: 17px;
+display: block;
+position: absolute;
+margin-left: 15px;
+}
+ #menuList{
+	transition: .5s;
+	}
+.sub-menu{
+left: 90px;
+padding: 0px;
+margin: 0px;
+position: absolute;
+margin-top: 50px;
+box-shadow: 0 0 3px #ffdf42, 0 0 5px #000000;
+}	
+ section
+  {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 0;
+  width: 100%;
+  display: flex;
+ flex-direction: column;
+  }
+   .fiere1
+  {
+   line-height: 1.5;
+  font-family: Acrom;
+  font-size: 10px;
+  color: #ffffff;
+  }
+  .fiere2
+  {
+  line-height: 1.5;
+  font-family: Acrom;
+  font-size: 10px;
+  color: #ffffff;
+  }
+  .fiere3
+  {
+  line-height: 1.5;
+  font-family: Acrom;
+  font-size: 10px;
+  color: #ffffff;
+  }
+details > p {
+width: 200px;
+  background-color: #3C005A;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 1px #bbbbbb;
+  font-size: 9px;
+}
+.container {
+  text-align: center;
+  margin: 20px;
+    border-top: 2px solid white;
+	}
+.testo, .email
+{
+width: 30%;
+margin: 4px;
+padding: 2px;
+padding-left: 7px;
+font-size:13px;
+font-family: Acrom;
+}
+.form-control
+{
+padding: 7px 10px;
+width: 65%;
+font-family: Acrom;
+font-size:15px;
+}
+.form-group
+{
+margin: 10px;
+}
+button
+{
+margin: 10px;
+width: 20%;
+font-family: Arial;
+}
+h2
+{
+margin-top: 20px;
+margin-bottom: 20px;
+font-family: Arial;
+font-size: 15px;
+color: white;
+  }
+  </style>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+  <div class="menu">
+<h1>Findyourcon</h1>
+<ul id="menuList" class="menu2">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="info.html">INFO</a></li>
+    <li><a href="calendario.html">CALENDARIO</a></li>
+    <li class="fiere"><a href="#" class="active">LE FIERE</a>
+	<ul class="sub-menu">
+	<li><a href="alfabetico.html">Alfabetico</a></li>
+	<li><a href="regioni.html">Per Regione</a></li>
+	</ul>
+	</li>
+	</ul>
+	<img src="linee.png" class="linee" onclick="togglemenu()">
+</div>
+<head>
+        <meta charset="utf-8" />
+		  <title>FINDYOURCON</title>
+		  
+    </head>
+<img src="DA5DF07E-1C51-4E21-94D6-B0BBF18FE32B-e1558688706825.jpeg">
+<section>
+<div class= "fiere1">
+<h3><font style="font-family:Arial" color="#fff275">A</font><br>
+<details><summary>• Alecomics</summary>
+<p>Cittadella di Alessandria (AL), Piemonte<br>
+<br>
+Contatti: <a href = "mailto:info@alecomics.it"><font color="#fff275">info@alecomics.it</a></font><br>
+Sito web: <a href="https://www.alecomics.it/"><font color="#fff275">alecomics.it</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">B</font><br>
+<details><summary>• BGeek</summary>
+<p>Fiera del Levante (BA), Puglia<br>
+<br>
+Contatti: <a href = "mailto:info@bgeek.it"><font color="#fff275">info@bgeek.it</a></font><br>
+Sito web: <a href="http://www.bgeek.it/"><font color="#fff275">bgeek.it</font></a></p>
+</details>
+<details><summary>• Burtomics </summary>
+<p>Finalborgo (SV), Liguria<br>
+<br>
+Contatti: <a href = "mailto:burtomics@gmail.com"><font color="#fff275">burtomics@gmail.com</a></font><br>
+Sito web: <a href="https://www.burtomics.it/"><font color="#fff275">burtomics.it</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">C</font><br>
+<details><summary>• Cartoomics</summary>
+<p>Rho Fiera Milano (MI), Lombardia<br>
+<br>
+Contatti: <a href = "mailto:visitatori.mgwcartoomics@fieramilano.it"><font color="#fff275">visitatori.mgwcartoomics@fieramilano.it</a></font><br>
+Sito web: <a href="https://www.milangamesweek.it/"><font color="#fff275">milangamesweek.it</font></a></p>
+</details>
+<details><summary>• Cassino Fantastica </summary>
+<p>Museo Historiale, Cassino (FR), Lazio<br>
+<br>
+Contatti: <a href = "mailto:festival@cassinofantastica.it"><font color="#fff275">festival@cassinofantastica.it</a></font><br>
+Sito web: <a href="http://www.cassinofantastica.it/"><font color="#fff275">cassinofantastica.it</font></a></p>
+</details>
+<details><summary>• Comicoff</summary>
+<p>Mostra d'Oltremare (NA), Campania<br>
+<br>
+Contatti: <a href = "mailto:comicoff.raduno@gmail.com"><font color="#fff275">comicoff.raduno@gmail.com</a></font><br>
+Instagram: <a href="https://www.instagram.com/comicoff_official/?hl=it"><font color="#fff275">@comicoff_official</font></a></p>
+</details>
+<details><summary>• Comicon</summary>
+<p>Mostra d'Oltremare (NA), Campania<br>
+<br>
+Contatti: <a href = "mailto:info@comicon.it"><font color="#fff275">info@comicon.it</a></font><br>
+Sito web: <a href="https://www.comicon.it/"><font color="#fff275">comicon.it</font></a></p>
+</details>
+<details><summary>• Cosenza Comics and Games</summary>
+<p>Parco Acquatico Santa Chiara di Rende (CS), Calabria<br>
+<br>
+Contatti: <a href="http://www.cosenzacomicsandgames.it/index.php/contatti"><font color="#fff275">Form</font></a><br>
+Sito web: <a href="http://www.cosenzacomicsandgames.it/"><font color="#fff275">cosenzacomicsandgames.it</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">E</font><br>
+<details><summary>• Etna comics</summary>
+<p>Viale Africa (CT), Sicilia<br>
+<br>
+Contatti: <a href = "mailto:info@etnacomics.com"><font color="#fff275">info@etnacomics.com</a></font><br>
+Sito Web: <a href="https://www.etnacomics.com/home"><font color="#fff275">etnacomics.com</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">F</font><br>
+<details><summary>• Falcomics</summary>
+<p>Parco Kennedy, Falconara Marittima (AN), Marche<br>
+<br>
+Contatti: <a href="https://www.falcomics.it/contattaci/"><font color="#fff275">Form</font></a><br>
+Sito web: <a href="https://www.falcomics.it/"><font color="#fff275">falcomics.it</font></a></p>
+</details>
+<details><summary>• Fantaexpo</summary>
+<p>Parco dell'Irno (SA), Campania<br>
+<br>
+Contatti: <a href = "mailto:info@fantaexpo.it"><font color="#fff275">info@fantaexpo.it</a></font><br>
+Sito web: <a href="https://fantaexpo.it/"><font color="#fff275">fantaexpo.it</font></a></p>
+</details>
+<details><summary>• Fantasy Day</summary>
+<p>Villa Bruno, San Giorno a Cremano (NA), Campania<br>
+<br>
+Contatti: <a href = "mailto:info@fantasyday.it"><font color="#fff275">info@fantasyday.it</a></font><br>
+Sito web: <a href="https://www.fantasyday.it/index.php"><font color="#fff275">fantasyday.it</font></a></p>
+</details>
+<details><summary>• Festa dell’unicorno</summary>
+<p>Vinci (FI), Toscana<br>
+<br>
+Contatti: <a href = "mailto:info@festaunicorno.com"><font color="#fff275">info@festaunicorno.com</a></font><br>
+Sito Web: <a href="https://www.festaunicorno.com/it/index.html"><font color="#fff275">festaunicorno.com</font></a></p>
+</details>
+<details><summary>• Firenze comics </summary>
+<p>Parco di Villa Montalvo, Campi Bisenzio (FI), Toscana<br>
+<br>
+Contatti: <a href = "mailto:firenzecomics@gmail.com"><font color="#fff275">firenzecomics@gmail.com</a></font><br>
+Facebook: <a href="https://www.facebook.com/firenzecomics/"><font color="#fff275">Firenze Comics</font></a></p>
+</details>
+</h3>
+</div>
+<div class="fiere2">
+<h3>
+<font style="font-family:Arial" color="#fff275">G</font><br>
+<details><summary>• Gamics</summary>
+<p>CarraraFiere, Marina di Carrara (MS), Toscana<br>
+<br>
+Contatti: <a href = "mailto:info@gamics.it"><font color="#fff275">info@gamics.it</a></font><br>
+Sito Web: <a href="https://www.gamics.it/"><font color="#fff275">gamics.it</font></a></p>
+</details>
+<details><summary>• Gardacon</summary>
+<p>Centro Fiera del Garda, Montichiari (BS), Lombardia<br>
+<br>
+Contatti:  <a href = "mailto:info@gardacon.it"><font color="#fff275">info@gardacon.it</a></font><br>
+Sito web: <a href="https://www.gardacon.it/"><font color="#fff275">gardacon.it</font></a></p>
+</details>
+<details><summary>• Garda Fantasy & Comics</summary>
+<p>Lungolago Regina Adelaide, Garda (VR), Veneto<br>
+<br>
+Contatti: <a href = "mailto:info@lafestadellefate.it"><font color="#fff275">info@lafestadellefate.it </a></font> <br>
+Sito Web: <a href="http://www.lafestadellefate.it/garda-fantasy-comics/"><font color="#fff275">lafestadellefate.it/garda-fantasy-comics</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">L</font><br>
+<details><summary>• Lecce Cosplay & Comics</summary>
+<p>Lecce Fiere (LE), Puglia<br>
+<br>
+Contatti: <a href = "mailto:info@leccecosplayandcomics.it"><font color="#fff275">info@leccecosplayandcomics.it</a></font><br>
+Sito web: <a href="http://www.leccecosplayandcomics.it/"><font color="#fff275">leccecosplayandcomics.it</font></a></p>
+</details>
+<details><summary>• Lucca Comics </summary>
+<p>Mura di Lucca (LU), Toscana<br>
+<br>
+Contatti: <a href = "mailto:info@luccacomicsandgames.com"><font color="#fff275">info@luccacomicsandgames.com</a></font><br>
+Sito Web: <a href="https://www.luccacomicsandgames.com/it/"><font color="#fff275">luccacomicsandgames.com</font></a></p>
+</details>
+<details><summary>• Ludicomix </summary>
+<p>Palazzo delle Esposizioni, Empoli (FI), Toscana<br>
+<br>
+Contatti: <a href = "mailto:info@ludicomix.it"><font color="#fff275">info@ludicomix.it</a></font><br>
+Sito Web: <a href="https://www.ludicomix.it/"><font color="#fff275">ludicomix.it</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">M</font><br>
+<details><summary>• Milan Games Week</summary>
+<p>Rho Fiera Milano (MI), Lombardia<br>
+<br>
+Contatti: <a href = "mailto:visitatori.mgwcartoomics@fieramilano.it"><font color="#fff275">visitatori.mgwcartoomics@fieramilano.it</a></font><br>
+Sito web: <a href="https://www.milangamesweek.it/"><font color="#fff275">milangamesweek.it</font></a></p>
+</details>
+<details><summary>• Milano Novegro</summary>
+<p>Parco Esposizioni Novegro (MI), Lombardia<br>
+<br>
+Contatti: <a href = "mailto:informazioni@festivaldelfumetto.com"><font color="#fff275">informazioni@festivaldelfumetto.com</a></font><br>
+Sito web: <a href="https://www.festivaldelfumetto.com/"><font color="#fff275">festivaldelfumetto.com</font></a></p>
+</details>
+<details><summary>• Modena nerd</summary>
+<p>ModenaFiere (MO), Emilia Romagna<br>
+<br>
+Contatti: <a href = "mailto:info@modenanerd.it"><font color="#fff275">info@modenanerd.it</a></font><br>
+Sito web: <a href="https://www.modenanerd.it/"><font color="#fff275">modenanerd.it</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">N</font><br>
+<details><summary>• NaonisCon</summary>
+<p>Fiera di Pordenone (PN), Friuli Venezia Giulia<br>
+<br>
+Contatti: <a href = "mailto:info@clubinnercircle.it"><font color="#fff275">info@clubinnercircle.it</a></font><br>
+Sito web: <a href="https://clubinnercircle.it/naoniscon/edizione-2022"><font color="#fff275">clubinnercircle.it/naoniscon</font></a></p>
+</details>
+<details><summary>• Nerd show </summary>
+<p>Quartiere Fieristico di Bologna (BO), Emilia Romagna<br>
+<br>
+Contatti: <a href="https://www.nerdshow.it/contatti/"><font color="#fff275">Email/Numeri telefonici</font></a><br>
+Sito web: <a href="https://www.nerdshow.it/"><font color="#fff275">nerdshow.it</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">P</font><br>
+<details><summary>• Palermo Comic Convention</summary>
+<p>Cantieri Culturali alla Zisa (PA), Sicilia<br>
+<br>
+Contatti: <a href = "mailto:info@palermocomicconvention.it"><font color="#fff275">info@palermocomicconvention.it</a></font><br>
+Sito Web: <a href="https://www.palermocomicconvention.it/"><font color="#fff275">palermocomicconvention.it</font></a></p>
+</details>
+<details><summary>• Pescara Comix&Games</summary>
+<p>PALA DEAN MARTIN, Montesilvano (PE), Abruzzo<br>
+<br>
+Contatti: <a href = "mailto:pescaracomix@gmail.com"><font color="#fff275">pescaracomix@gmail.com</font></a><br>
+Sito web: <a href="https://www.pescaracomix.it/"><font color="#fff275">pescaracomix.it</font></a></p>
+</details>
+</h3>
+</div>
+<div class="fiere3">
+<h3>
+<font style="font-family:Arial" color="#fff275">R</font><br>
+<details><summary>• Rimini Comix</summary>
+<p>Piazza Federico Fellini (RN), Emilia Romagna<br>
+<br>
+Contatti: <a href = "mailto:info@riminicomix.it"><font color="#fff275">info@riminicomix.it</a></font><br>
+Sito web: <a href="https://www.riminicomix.it/"><font color="#fff275">riminicomix.it</font></a></p>
+</details>
+<details><summary>• Romics </summary>
+<p>Nuova Fiera di Roma (ROMA), Lazio<br>
+<br>
+Contatti: <a href = "mailto:info@romics.it"><font color="#fff275">info@romics.it</a></font><br>
+Sito web: <a href="https://www.romics.it/"><font color="#fff275">romics.it</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">S</font><br>
+<details><summary>• San Beach Comix</summary>
+<p>Piazza Giorgini, San Benedetto del Tronto (AP), Marche<br>
+<br>
+Contatti: <a href="https://www.sanbeachcomix.com/contatta-il-sanbeach-comix/"><font color="#fff275">Form</font></a><br>
+Sito web: <a href="https://www.sanbeachcomix.com/"><font color="#fff275">sanbeachcomix.com</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">T</font><br>
+<details><summary>• Taranto Comix</summary>
+<p>Via Pesca Mazzisciata (TA), Puglia<br>
+<br>
+Contatti: <a href = "mailto:tarantocomix15@gmail.com"><font color="#fff275">tarantocomix15@gmail.com</a></font><br>
+Facebook: <a href="https://www.facebook.com/TarantoComixUfficiale/"><font color="#fff275">Taranto Comix</font></a></p>
+</details>
+<details><summary>• Teramo Comix</summary>
+<p>Campus Universitario di UniTE di Coste Sant'Agostino (TE), Abruzzo<br>
+<br>
+Instagram: <a href="https://www.instagram.com/teramocomix/?hl=it"><font color="#fff275">@teramocomix</font></a><br>
+Facebook: <a href="https://www.facebook.com/TeramoComix/"><font color="#fff275">Teramo Comix</font></a></p>
+</details>
+<details><summary>• Tiferno Comics </summary>
+<p>Largo Muzi, Città di Castello (PG), Umbria<br>
+<br>
+Contatti: <a href = "mailto:tifernocomics@gmail.com"><font color="#fff275">tifernocomics@gmail.com </a></font> <br>
+Sito Web: <a href="https://www.tifernocomics.com/"><font color="#fff275">tifernocomics.com</font></a></p>
+</details>
+<details><summary>• Torino Comics</summary>
+<p>Lingotto Fiere (TO), Piemonte<br>
+<br>
+Contatti: <a href = "mailto:info@torinocomics.com"><font color="#fff275">info@torinocomics.com</a></font><br>
+Sito web: <a href="https://torinocomics.com/index.php"><font color="#fff275">torinocomics.com</font></a></p>
+</details>
+<details><summary>• Trapani Comix & games</summary>
+<p>Villa Margherita (TP), Sicilia<br>
+<br>
+Contatti: <a href = "mailto:info.trapanicomix@gmail.com"><font color="#fff275">info.trapanicomix@gmail.com</a></font><br>
+Sito Web: <a href="https://www.trapanicomix.com/"><font color="#fff275">trapanicomix.com</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">V</font><br>
+<details><summary>• Varchi Comics </summary>
+<p>Montevarchi (AR), Toscana<br>
+<br>
+Contatti: <a href = "mailto:info@varchicomics.com"><font color="#fff275">info@varchicomics.com</a></font><br>
+Sito Web: <a href="https://varchicomics.wixsite.com/varchicomics?fbclid=IwAR0a5z7QqOCCjFKngdEFsEsWMToap1jHKQixBEYOJHEmXT_uq4hg5CkNy-I"><font color="#fff275">varchicomics.wixsite.com</font></a></p>
+</details>
+<details><summary>• Venezia Comics</summary>
+<p>Forte Marghera (VE), Veneto<br>
+<br>
+Contatti: <a href = "mailto:info@veneziacomix.com "><font color="#fff275">info@veneziacomix.com </a></font> <br>
+Sito Web: <a href="https://www.veneziacomics.com/"><font color="#fff275">veneziacomics.com</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">X</font><br>
+<details><summary>• Xmas Comics</summary>
+<p>Lingotto Fiere (TO), Piemonte<br>
+<br>
+Contatti: <a href = "mailto:info@xmascomics.it"><font color="#fff275">info@xmascomics.it</a></font><br>
+Sito web: <a href="https://xmascomics.it/"><font color="#fff275">xmascomics.it</font></a></p>
+</details>
+<br>
+<font style="font-family:Arial" color="#fff275">Z</font><br>
+<details><summary>• Zoocomix</summary>
+<p>Zoosafari, Fasano (BR), Puglia<br>
+<br>
+Contatti: <a href = "mailto:info@zoosafari.it"><font color="#fff275">info@zoosafari.it</a></font><br>
+Sito Web: <a href="https://zoosafari.it/zoocomix/"><font color="#fff275">zoosafari.it/zoocomix</font></a></p>
+</details>
+</h3>
+</div>
+</section>
+<div class="container">
+<h2>CONOSCI ALTRE FIERE? FACCELO SAPERE!</h2>
+  <form target="_blank" action="https://formsubmit.co/2dc3f0cf03e57b89b7575527f1a94862" method="POST">
+   <input type="hidden" name="_next" value="https://kurisupolv.github.io/grazie.html">
+  <input type="hidden" name="_subject" value="Nuova fiera">
+  <input type="hidden" name="_captcha" value="false">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="testo" placeholder="Nome" required>
+          <input type="email" name="email" class="email" placeholder="Email" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Suggeriscici una fiera!" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit"><h4>INVIA</h4></button>
+  </form>
+</div>
+ <script>
+function togglemenu(){
+var menuList = document.getElementById("menuList");
+ if(menuList.style.display == "block")
+	{
+		menuList.style.display = "none";
+	}
+ else
+	{
+		menuList.style.display = "block";
+	}
+}
+</script>
+</body>
+</html>
